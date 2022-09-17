@@ -9,10 +9,11 @@ export const SwitchInput = styled.input`
 export const SwitchLabel = styled.label.attrs({
   htmlFor: 'switch',
 })`
-  // style "Dark Mode" vertically
+  // style "Dark Mode"
+  font-size: 0.9rem;
   display: flex;
   align-items: center;
-  &:hover > p {
+  &:hover {
     filter: brightness(${({ theme }) => theme.hoverBrightness});
   }
 

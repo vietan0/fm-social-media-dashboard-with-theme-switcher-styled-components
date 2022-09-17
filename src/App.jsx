@@ -35,9 +35,7 @@ function App() {
             checked={darkMode}
             onChange={switchTheme}
           />
-          <SwitchLabel className="textSecondary semibold">
-            <p>Dark Mode</p>
-          </SwitchLabel>
+          <SwitchLabel className="textSecondary semibold">Dark Mode</SwitchLabel>
         </Header>
         <StyledCardContainer>
           <BigCard
