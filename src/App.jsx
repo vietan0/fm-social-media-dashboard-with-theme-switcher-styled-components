@@ -156,7 +156,7 @@ function App() {
             rel="noreferrer"
           >
             <img
-              src="/public/images/icon-github.svg"
+              src="/images/icon-github.svg"
               alt=""
             />{' '}
             GitHub

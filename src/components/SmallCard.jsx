@@ -24,7 +24,7 @@ export default function SmallCard({ socialMedia, statName, number, diff, diffTyp
       <div className="top social">
         <p className="textSecondary semibold">{statName}</p>
         <img
-          src={`/public/images/icon-${socialMedia}.svg`}
+          src={`/images/icon-${socialMedia}.svg`}
           alt=""
         />
       </div>
@@ -32,7 +32,7 @@ export default function SmallCard({ socialMedia, statName, number, diff, diffTyp
         <span>{number}</span>
         <div className="diff-today semibold">
           <img
-            src={`/public/images/icon-${diffType}.svg`}
+            src={`/images/icon-${diffType}.svg`}
             alt=""
           />
           <p>{diff}</p>
