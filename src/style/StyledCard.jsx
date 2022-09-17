@@ -27,7 +27,7 @@ export default styled.div`
     display: flex;
     align-items: center;
     gap: 0.25rem;
-    color: ${(props) => `var(--${props.diffType})`};
+    color: ${({diffType}) => `var(--${diffType})`};
     img {
       width: 10px;
     }

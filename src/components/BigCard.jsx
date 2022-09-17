@@ -15,7 +15,7 @@ const StyledBigCard = styled(StyledCard)`
     // decide highlight color based on props
     // props is passed from:
     // App (React) --> BigCard (React) --> Styled (styled-components)
-    background: ${(props) => `var(--${props.socialMedia})`};
+    background: ${({ socialMedia }) => `var(--${socialMedia})`};
   }
 
   .stat {
