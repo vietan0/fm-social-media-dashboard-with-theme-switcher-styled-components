@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useCallback } from 'react';
 import { ThemeProvider } from 'styled-components';
 import { lightTheme, darkTheme } from './style/themes';
 import GlobalStyle from './style/Style';
@@ -9,11 +9,10 @@ import BigCard from './components/BigCard';
 import SmallCard from './components/SmallCard';
 
 function App() {
-  // eslint-disable-next-line no-unused-vars
   const [darkMode, setDarkMode] = useState(false);
-  function switchTheme() {
+  const switchTheme = useCallback(() => {
     setDarkMode((prev) => !prev);
-  }
+  });
 
   useEffect(() => {
     if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
@@ -34,7 +33,6 @@ function App() {
             type="checkbox"
             id="switch"
             checked={darkMode}
-            // eslint-disable-next-line react/jsx-no-bind
             onChange={switchTheme}
           />
           <SwitchLabel className="textSecondary semibold">
