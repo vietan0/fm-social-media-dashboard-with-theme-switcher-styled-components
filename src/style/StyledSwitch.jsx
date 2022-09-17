@@ -3,7 +3,7 @@ import styled from 'styled-components';
 export const SwitchInput = styled.input`
   height: 0;
   width: 0;
-  visibility: hidden;
+  opacity: 0;
 `;
 
 export const SwitchLabel = styled.label.attrs({
@@ -45,5 +45,9 @@ export const SwitchLabel = styled.label.attrs({
   input:checked + &::after {
     left: calc(100% - 3px);
     transform: translateX(-100%);
+  }
+
+  input:focus-visible + & {
+    outline: 2px dashed white;
   }
 `;

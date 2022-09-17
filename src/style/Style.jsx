@@ -63,6 +63,7 @@ export default createGlobalStyle`
   }
 
   .App {
+    margin: 0 auto;
     display: flex;
     flex-direction: column;
     gap: 3rem;
